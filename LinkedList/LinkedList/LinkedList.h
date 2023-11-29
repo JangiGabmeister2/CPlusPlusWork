@@ -1,20 +1,26 @@
-﻿#pragma once
+#pragma once
 
 #include "Node.h"
 #include <iostream>
+using namespace std;
 
 class LinkedList
 {
 private:
-    Node* firstNode;
-    Node* lastNode;
+	Node* frontNode;
+	Node* lastNode;
 
 public:
-    LinkedList();
+	LinkedList();
 
-    void AddNode(int data);
-    void InsertNode(int position, int data);
-    void PrintList();
-    void PrintListBackwards();
-    void DeleteNode(int data);
+	void AddNode(int data);
+
+	void InsertNode(int position, int data);
+
+	void PrintList();
+
+	void PrintListBackwards();
+
+	void DeleteNode(int position);
 };
+

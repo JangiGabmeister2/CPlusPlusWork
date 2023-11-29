@@ -1,17 +1,15 @@
-﻿#include "Node.h"
-
-#include <iterator>
+#include "Node.h"
 
 Node::Node()
 {
-    data = 0;
-    nextNode = nullptr;
-    this->prevNode = nullptr;
+	data = 0;
+	nextNode = nullptr;
+	this->prevNode = nullptr;
 }
 
 Node::Node(int data)
 {
-    this->data = data;
-    this->nextNode = nullptr;
-    prevNode = nullptr;
+	this->data = data;
+	this->nextNode = nullptr;
+	prevNode = nullptr;
 }
